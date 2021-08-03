@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function getRecipe(){ //THIS IS TEMPORARY JUST FOR TESTING
+                var url = new URL(window.location.href);
+                var id = url.searchParams.get("id");
+                console.log(id);
+                document.getElementById("test-id").innerHTML = id;
+            }
+        </script>
+    </head>
+    <body onload="getRecipe()">
+        <h3>id:</h3>
+        <span id="test-id"></span>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <script lang="javascript" src="javascript/planner.js"></script>
+    <script lang="javascript" src="javascript/excel-reader.js"></script>
+    <script lang="javascript" src="javascript/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!--JQuery-->
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <title>Meal Planner</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Meal Planner</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Controls</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-secondary">Generate Week</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="file" id="file-upload" accept=".xls,.xlsx" onchange="getUploadedFile()"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <button>something</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Meals</h3>
+                        <table class="table table-bordered">
+                            <thead class="thead-dark text-center">
+                                <tr class="text-center">
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="meal-name">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="meal-image">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="meal-replace">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="meal-recipe">
+                                    <td>Recipe name (link to the recipe)</td>
+                                    <td><a href="recipe.html?id=927">Recipe</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Shopping List</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
